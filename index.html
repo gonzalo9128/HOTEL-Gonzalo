@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Hotel Villa Elciego</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="globales.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm sticky-top">
+    <div class="container">
+      
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo hotel.webp" alt="imagen logo" width="140px" height="80px">
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ventajas">Ventajas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ubicacion">El Entorno</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habitaciones">Habitaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary ms-lg-2 mt-2 mt-lg-0" href="reservas.html">¡Reserva Ahora!</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          
+          <form class="bg-white p-4 p-md-5 rounded shadow">
+            <div class="row g-3 align-items-end">
+              
+              <div class="col-lg-3 col-md-6">
+                <label for="checkin" class="form-label fw-bold text-granate">Entrada</label>
+                <input type="date" class="form-control" id="checkin">
+              </div>
+              
+              <div class="col-lg-3 col-md-6">
+                <label for="checkout" class="form-label fw-bold text-granate">Salida</label>
+                <input type="date" class="form-control" id="checkout">
+              </div>
+              
+              <div class="col-lg-3 col-md-6">
+                <label for="huespedes" class="form-label fw-bold text-granate">Huéspedes</label>
+                <input type="number" class="form-control" id="huespedes" value="2" min="1">
+              </div>
+              
+              <div class="col-lg-3 col-md-6 d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Disponibilidad</button>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ventajas" class="container text-center py-5">
+    <h2 class="mb-5">Ventajas de Reservar Online</h2>
+    
+    <div id="carouselVentajas" class="carousel slide" data-bs-ride="carousel">
+      
+      <div class="carousel-inner">
+        
+        <div class="carousel-item active">
+          <i class="bi bi-calendar-check icono-ventaja"></i>
+          <h5 class="mt-3 fw-bold">Cancelación Gratuita</h5>
+          <p class="w-75 mx-auto d-none d-md-block">Flexibilidad total en tu reserva hasta 24h antes.</p>
+        </div>
+        
+        <div class="carousel-item">
+          <i class="bi bi-headset icono-ventaja"></i>
+          <h5 class="mt-3 fw-bold">Atención Personalizada</h5>
+          <p class="w-75 mx-auto d-none d-md-block">Gestionamos tu reserva de forma directa, sin intermediarios.</p>
+        </div>
+        
+        <div class="carousel-item">
+        <i class="bi bi-piggy-bank-fill icono-ventaja"></i>
+          <h5 class="mt-3 fw-bold">Mejor Precio Garantizado</h5>
+          <p class="w-75 mx-auto d-none d-md-block">Siempre encontrarás el precio más bajo en nuestra web.</p>
+        </div>
+
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselVentajas" data-bs-slide="prev">
+        <i class="bi bi-arrow-left-circle-fill"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselVentajas" data-bs-slide="next">
+        <i class="bi bi-arrow-right-circle-fill"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="ubicacion" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Nos situamos en el corazón de Elciego</h2>
+      
+      <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-zoom text-white">
+            <img src="img/riscal.jpg" class="card-img" alt="riscal">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Bodega Marqués de Riscal</h5>
+              <p class="card-text d-none d-md-block">Disfruta de una experiencia única de vino y vanguardia en la icónica bodega Marqués de Riscal.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-zoom text-white">
+            <img src="img/iglesialimpia.jpg" class="card-img" alt="iglesia">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Iglesa de San Andrés</h5>
+              <p class="card-text d-none d-md-block">Descubre la imponente Iglesia de San Andrés, una joya barroca con sus dos torres dominando Elciego.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-zoom text-white">
+            <img src="img/plaza.jpg" class="card-img" alt="plaza">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Plaza Mayor de Elciego</h5>
+              <p class="card-text d-none d-md-block">Siente el corazón de Elciego en su Plaza Mayor, el centro neurálgico de la vida y la historia local.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card card-zoom text-white">
+            <img src="img/laguardia.jpg" class="card-img" alt="laguardia">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Laguardia</h5>
+              <p class="card-text d-none d-md-block">Visita Laguardia, una impresionante villa medieval amurallada en el corazón de la Rioja Alavesa.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="habitaciones" class="container py-5">
+    <h2 class="text-center mb-5">Nuestras Habitaciones</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="img/habindividual.png" class="card-img-top" alt="Doble">
+          <div class="card-body">
+            <h5 class="card-title text-granate">Habitación Individual</h5>
+            <h6 class="card-title text-black">Desde 59€</h6>
+            <p class="card-text">Disfruta de la soledad en esta maravillosa habitación y sal a descubrir los encantos de la zona</p>
+            <a href="reservas.html" class="btn btn-primary">Reservar</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="img/habdoble.png" class="card-img-top" alt="Superior">
+          <div class="card-body">
+            <h5 class="card-title text-granate">Habitación Doble</h5>
+            <h6 class="card-title text-black">Desde 73€</h6>
+            <p class="card-text">Perfecta para parejas. Confort y vistas en un espacio acogedor.</p>
+            <a href="reservas.html" class="btn btn-primary">Reservar</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <img src="img/suite.png" class="card-img-top" alt="Suite">
+          <div class="card-body">
+            <h5 class="card-title text-granate">Suite Deluxe</h5>
+            <h6 class="card-title text-black">Desde 140€</h6>
+            <p class="card-text">El máximo lujo. Disfruta de terraza privada y las mejores vistas.</p>
+            <a href="reservas.html" class="btn btn-primary">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer id="footer" class="bg-light pt-5 pb-4 border-top">
+    <div class="container">
+      <div class="row gy-4">
+        
+        <div class="col-md-4">
+        <img src="img/logo hotel.webp" alt="imagen logo" width="120px" height="70px">
+          <p>
+            C/ El norte, 123<br>
+            01340 Elciego (Álava)<br>
+            <a href="tel:+34 932 321 858" class="text-decoration-none text-dark">Tel:+34 932 321 858</a><br>
+            <a href="mailto:reservas@hoteleleciego.com" class="text-decoration-none text-dark">reservas@hoteleleciego.com</a>
+          </p>
+        </div>
+        
+        <div class="col-md-4">
+          <h5 class="fw-bold text-granate">Ubicación</h5>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11756.914074219985!2d-2.624738562145558!3d42.51460361282855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd50010196614b0b%3A0x8633364860630712!2sElciego%2C%20%C3%81lava!5e0!3m2!1ses!2ses!4v1678888888888" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <h5 class="fw-bold text-granate">Síguenos</h5>
+          <div class="footer-iconos">
+            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+      
+      <hr class="my-4">
+      <div class="text-center">
+        <p class="mb-0">&copy; Hotel Villa Elciego</p>
+      </div>
+      
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
