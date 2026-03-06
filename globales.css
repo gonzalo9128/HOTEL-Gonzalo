@@ -115,4 +115,46 @@
 
 .footer-iconos a:hover {
   color: var(--color-granate);
+
 }
+/* --- TAREA 2: ANIMACIONES --- */
+
+/* 1. ANIMACIÓN 2D: Entrada suave para las ventajas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#ventajas .carousel-item {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* 2. ANIMACIÓN 3D: Efecto de profundidad en las tarjetas del entorno */
+/* Modificamos la clase .card-zoom que ya tenías para añadir perspectiva */
+#ubicacion .row {
+  perspective: 1000px; /* Necesario para que el efecto 3D se aprecie */
+}
+
+.card-zoom {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.card-zoom:hover {
+  /* Rotación en eje Y y elevación en eje Z para efecto 3D real */
+  transform: rotateY(10deg) translateZ(20px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Aseguramos que el texto dentro de la tarjeta también tenga profundidad */
+.card-zoom:hover .card-title {
+  transform: translateZ(50px);
+  transition: transform 0.4s;
+}
+
